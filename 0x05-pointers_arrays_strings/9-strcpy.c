@@ -1,22 +1,19 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * *_strcpy -  copies the string pointed to by src
- * @dest: char type string
- * @src: char type string
- * Description: Copy the string pointed to by pointer `src` to
- * the buffer pointed to by `dest`
- * Return: Pointer to `dest`
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
-
-char *_strcpy(char *dest, char *src)
+int main(void)
 {
-	int i = -1;
+    char s1[98];
+    char *p;
 
-	do {
-		i++;
-		dest[i] = src[i];
-	} while (src[i] != '\0');
-
-	return (dest);
+    p = _strcpy(s1, "First, solve the problem. Then, write the code\n");
+    printf("%s", s1);
+    printf("%s", p);
+    return (0);
 }
+
