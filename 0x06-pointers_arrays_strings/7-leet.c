@@ -33,7 +33,7 @@ char *leet(char *s)
         break;
       }
     }
-    c++;
+    i++;
   }
   return (s);
 }
